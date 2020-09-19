@@ -1,0 +1,7 @@
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\bin\Debug\Lab 5.exe.config
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\bin\Debug\Lab 5.exe
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\bin\Debug\Lab 5.pdb
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\obj\Debug\Lab 5.csprojAssemblyReference.cache
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\obj\Debug\Lab 5.csproj.CoreCompileInputs.cache
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\obj\Debug\Lab 5.exe
+C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 5\obj\Debug\Lab 5.pdb

@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Globalization;
 
-namespace main
+namespace Lab_2 // Варіант 7
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int start;
-            int finish;
+            Console.Write("Введите стартовый элемент (целое число): ");
+            int finish = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите стартовый элемент (целое число): ");
-            string start_index_str = Console.ReadLine();
-            finish = Convert.ToInt32(start_index_str);
-
-            Console.WriteLine("Введите финишный элемент (целое число): ");
-            string finish_index_str = Console.ReadLine();
-            start = Convert.ToInt32(finish_index_str);
+            Console.Write("Введите финишный элемент (целое число): ");
+            int start = Convert.ToInt32(Console.ReadLine());
 
             double summ = 0;
             if (finish <= start && finish >= 0)
@@ -30,9 +25,7 @@ namespace main
                 Console.WriteLine("Сумма ряда: {0}", summ); ;
             }
             else
-            {
                 Console.WriteLine("Ошибка. Некорректные числа");
-            }
 
             Console.ReadKey();
         }

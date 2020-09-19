@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.HtmlControls;
-using System.Windows.Controls;
-using System.Windows.Forms;
-using System.Globalization;
 
-namespace Lab_1
+namespace Lab_1 // Варіант 7
 {
     class Program
     {

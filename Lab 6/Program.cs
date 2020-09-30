@@ -8,46 +8,46 @@ namespace Lab_6
         {
             // Task 1
             int task1 = 123;
-            Console.WriteLine("task 1: " + Reverse(task1));
+            Console.WriteLine("task 1:\t\t" + Reverse(task1));
 
             // Task 2
             string task2 = "test";
-            Console.WriteLine("task 2: " + Reverse(task2));
+            Console.WriteLine("task 2:\t\t" + Reverse(task2));
 
             // Task 3
             double task3 = 12.321;
-            Console.WriteLine("task 3: " + Convert.ToDouble(SplitReverse(task3)));
+            Console.WriteLine("task 3:\t\t" + Convert.ToDouble(SplitReverse(task3)));
 
             // Task 4
             string task4 = "sa,ffdd,afdss,qgasfg,54";
-            Console.WriteLine("task 4: " + SplitReverse(task4));
+            Console.WriteLine("task 4:\t\t" + SplitReverse(task4));
 
             // Task 5
 
             // Task 6
             Console.WriteLine();
-            Console.WriteLine("task 6.1: " + RecurseReverse(task1));
-            Console.WriteLine("task 6.2: " + RecurseReverse(task2));
-            Console.WriteLine("task 6.3: " + Convert.ToDouble(RecurseSplitReverse(task3)));
-            Console.WriteLine("task 6.4: " + RecurseSplitReverse(task4));
+            Console.WriteLine("task 6.1:\t" + RecurseReverse(task1));
+            Console.WriteLine("task 6.2:\t" + RecurseReverse(task2));
+            Console.WriteLine("task 6.3:\t" + Convert.ToDouble(RecurseSplitReverse(task3)));
+            Console.WriteLine("task 6.4:\t" + RecurseSplitReverse(task4));
             Console.WriteLine();
 
 
             // Task 7
-            Console.Write("task 7:");
+            Console.Write("task 7:\t\t");
             int[] task7 = new int[10] { 1, 3, 5, 1, 6, 3, 2, 1, 6, 10 };
             var reversedArray = Reverse(task7);
             for (int i = 0; i < reversedArray.Length; i++)
                 Console.Write(" " + reversedArray[i]);
 
             // Task 8 (ref)
-            Console.Write("\ntask 8.1:");
+            Console.Write("\ntask 8.1:\t");
             int[] task81 = new int[10] { 1, 3, 5, 1, 6, 3, 2, 1, 6, 10 };
             Reverse(ref task81);
             for (int i = 0; i < task81.Length; i++)
                 Console.Write(" " + task81[i]);
             // Task 8 (out)
-            Console.Write("\ntask 8.2:");
+            Console.Write("\ntask 8.2:\t");
             int[] task82 = new int[10] { 1, 3, 5, 1, 6, 3, 2, 1, 6, 10 };
             int[] newTask82 = null;
             Reverse(task82, out newTask82);
@@ -158,15 +158,13 @@ namespace Lab_6
         }
         static void Reverse<T>(T[] array, out T[] newArray)
         {
-            T[] tempArr = new T[array.Length];
+            newArray = new T[array.Length];
             for (int i = 0, j = array.Length - 1;
                 i < array.Length;
                 i++, j--)
             {
-                tempArr[i] = array[j];
+                newArray[i] = array[j];
             }
-
-            newArray = tempArr;
         }
     }
 }

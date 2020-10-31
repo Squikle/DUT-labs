@@ -1,7 +1,0 @@
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\bin\Debug\Lab 7.exe.config
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\bin\Debug\Lab 7.exe
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\bin\Debug\Lab 7.pdb
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\obj\Debug\Lab 7.csprojAssemblyReference.cache
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\obj\Debug\Lab 7.csproj.CoreCompileInputs.cache
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\obj\Debug\Lab 7.exe
-C:\Users\mmish\Документы\GitHub\DUT-labs\Lab 7\obj\Debug\Lab 7.pdb

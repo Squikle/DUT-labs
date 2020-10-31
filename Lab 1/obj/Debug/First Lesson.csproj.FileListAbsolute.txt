@@ -1,7 +1,0 @@
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\bin\Debug\First Lesson.exe.config
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\bin\Debug\First Lesson.exe
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\bin\Debug\First Lesson.pdb
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\obj\Debug\First Lesson.csprojAssemblyReference.cache
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\obj\Debug\First Lesson.csproj.CoreCompileInputs.cache
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\obj\Debug\First Lesson.exe
-C:\Users\Squik\Desktop\Visual Projects\C#\DUT\First Lesson\First Lesson\obj\Debug\First Lesson.pdb

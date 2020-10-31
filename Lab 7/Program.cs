@@ -31,7 +31,7 @@ namespace Lab_7
             }
 
             Console.WriteLine($"\nПовторения чисел:");
-            HashSet<int> checkedNumbers = new HashSet<int>();
+            HashSet<int> checkedNumbers = new HashSet<int>(amount);
             for (int i = 0; i < list.Count(); i++)
             {
                 int count = 0;

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab_81
 {
@@ -22,7 +20,10 @@ namespace Lab_81
         {
             foreach (var _car in Cars.ToArray())
                 if (car == _car)
+                {
                     Cars.Remove(_car);
+                    return;
+                }
         }
 
         public IEnumerable<Car> GetCars(Car car)
@@ -41,7 +42,6 @@ namespace Lab_81
 
                 candidates.AddFirst(_car);
             }
-
             return candidates;
         }
 

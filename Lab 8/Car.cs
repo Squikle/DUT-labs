@@ -4,10 +4,10 @@ namespace Lab_81
 {
     class Car
     {
-        public string Name { get; set; }
-        public string Color { get; set; }
-        public int Speed { get; set; }
-        public int Year { get; set; }
+        public string Name { get; }
+        public string Color { get; }
+        public int Speed { get; }
+        public int Year { get; }
 
         public Car(string name, string color, int speed, int year)
         {

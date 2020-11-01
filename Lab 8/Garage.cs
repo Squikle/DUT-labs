@@ -6,7 +6,7 @@ namespace Lab_81
 {
     class Garage
     {
-        private List<Car> Cars { get; set; }
+        private List<Car> Cars { get; }
 
         public Garage()
         {

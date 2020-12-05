@@ -1,11 +1,14 @@
-﻿namespace Lab_9
+﻿using System;
+
+namespace Lab_9
 {
-    abstract class Shape
+    abstract class Shape : IDraw
     {
-        public abstract string Color { get; set; }
+        public abstract ConsoleColor Color { get; set; }
         public abstract int NumberVertices { get; }
         public abstract string ShapeName { get; }
         public abstract double GetSquare();
         public abstract double GetPerimeter();
+        public abstract void Draw();
     }
 }

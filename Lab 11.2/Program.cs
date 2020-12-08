@@ -20,7 +20,6 @@ namespace Lab_11._2
                     LastName = GetRandomLastName(rand)
                 });
             }
-                
 
             Console.WriteLine("Все студенты:");
             students.ForEach(Console.WriteLine);
@@ -40,7 +39,7 @@ namespace Lab_11._2
             students.FindStudents(s => s.Age >= 18).ForEach(Console.WriteLine);
             Console.WriteLine();
             Console.WriteLine("Первая буква имени \"А\"");
-            students.FindStudents(s => s.FirstName?[0] == 'a').ForEach(Console.WriteLine);
+            students.FindStudents(s => s.FirstName?[0] == 'A').ForEach(Console.WriteLine);
             Console.WriteLine();
             Console.WriteLine("Фамилия длинне 3 букв");
             students.FindStudents(s => s.LastName?.Length > 3).ForEach(Console.WriteLine);

@@ -8,7 +8,7 @@
         public int Age { get; set; }
 
         public static bool AgeCheck(Student student) => student.Age >= 18;
-        public static bool FirstNameFirstLetterA(Student student) => student.FirstName?[0] == 'a';
+        public static bool FirstNameFirstLetterA(Student student) => student.FirstName?[0] == 'A';
         public static bool LastNameIsLongerThan3(Student student) => student.LastName?.Length > 3;
 
         public override string ToString()

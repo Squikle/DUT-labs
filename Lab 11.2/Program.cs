@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 
 namespace Lab_11._2
 {
@@ -15,13 +13,12 @@ namespace Lab_11._2
             int numberOfStudents = 15;
             for (int i = 0; i < numberOfStudents; i++)
             {
-                students.Add(new Student()
+                students.Add(new Student
                 {
                     Age = rand.Next(15, 25),
-                    FirstName = GetRandomFirstName(),
-                    LastName = GetRandomLastName()
+                    FirstName = GetRandomFirstName(rand),
+                    LastName = GetRandomLastName(rand)
                 });
-                Thread.Sleep(10);
             }
                 
 
@@ -62,7 +59,7 @@ namespace Lab_11._2
             Console.ReadKey();
         }
 
-        private static string GetRandomFirstName()
+        private static string GetRandomFirstName(Random rand)
         {
             string[] names =
             {
@@ -79,9 +76,9 @@ namespace Lab_11._2
                 "Lisa",
                 "Nancy",
             };
-            return names[new Random().Next(names.Length)];
+            return names[rand.Next(names.Length)];
         }
-        private static string GetRandomLastName()
+        private static string GetRandomLastName(Random rand)
         {
             string[] names =
             {
@@ -98,7 +95,7 @@ namespace Lab_11._2
                 "Anderson",
                 "Beltran",
             };
-            return names[new Random().Next(names.Length)];
+            return names[rand.Next(names.Length)];
         }
     }
 }

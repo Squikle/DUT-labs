@@ -2,6 +2,8 @@
 {
     class CarService
     {
+        public delegate void ServiceDelegate(Car carToService);
+
         public void TuneWheelAlignment(Car car)
         {
             car.WheelAlignmentTuned = true;

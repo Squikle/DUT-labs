@@ -4,7 +4,6 @@ namespace Lab_11
 {
     class Program
     {
-        public delegate void ServiceDelegate(Car carToService);
         static void Main()
         {
             CarService carService = new CarService();
@@ -35,10 +34,10 @@ namespace Lab_11
             Console.ReadKey();
         }
 
-        static ServiceDelegate DoFullService(CarService carService)
+        static CarService.ServiceDelegate DoFullService(CarService carService)
         {
-            ServiceDelegate serviceOperation;
-            serviceOperation = carService.ChangeOil;
+            CarService.ServiceDelegate serviceOperation = null;
+            serviceOperation += carService.ChangeOil;
             serviceOperation += carService.FullInspect;
             serviceOperation += carService.Paint;
             serviceOperation += carService.RepairBody;
@@ -46,17 +45,17 @@ namespace Lab_11
             serviceOperation += carService.TuneWheelAlignment;
             return serviceOperation;
         }
-        static ServiceDelegate DoPreventionService(CarService carService)
+        static CarService.ServiceDelegate DoPreventionService(CarService carService)
         {
-            ServiceDelegate serviceOperation;
-            serviceOperation = carService.ChangeOil;
+            CarService.ServiceDelegate serviceOperation = null;
+            serviceOperation += carService.ChangeOil;
             serviceOperation += carService.FullInspect;
             return serviceOperation;
         }
-        static ServiceDelegate DoWheelService(CarService carService)
+        static CarService.ServiceDelegate DoWheelService(CarService carService)
         {
-            ServiceDelegate serviceOperation;
-            serviceOperation = carService.ChangeOil;
+            CarService.ServiceDelegate serviceOperation = null;
+            serviceOperation += carService.ChangeOil;
             serviceOperation += carService.ReplaceWheels;
             serviceOperation += carService.TuneWheelAlignment;
             return serviceOperation;
